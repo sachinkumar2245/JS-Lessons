@@ -12,3 +12,6 @@ const user ={
 user.welcomeMessage();
 user.username="sam";
 user.welcomeMessage();
+ // in browser global object is window thats why we can use various funcationalities of it!
+
+ 
