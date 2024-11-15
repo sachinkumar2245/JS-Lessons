@@ -7,4 +7,6 @@ if (a<b){
     total = a+b;
     
 }
-console.log(total);
+console.log(total); 
+
+
