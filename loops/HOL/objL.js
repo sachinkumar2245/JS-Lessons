@@ -5,12 +5,12 @@ const myObj= {
     swift: "swift by people"
 }
 
-for (const key in myObj) {
-    // console.log(`${key} shortcut is for ${myObj[key]}`); // this is the way to iterate in an object
+// for (const key in myObj) {
+//     // console.log(`${key} shortcut is for ${myObj[key]}`); // this is the way to iterate in an object
     
-}
+// }
 
-const programming=['js', 'rb'];
+// const programming=['js', 'rb'];
 
 // for (const key in programming) {
 //     console.log(programming[key]);
@@ -35,6 +35,38 @@ let myPg= [
 ]
 
 myPg.forEach((item)=>{
-    console.log(item.nigga);
+    // console.log(item.nigga);
     
 })  
+
+// const myNums = [1,2,3,4,5,6];
+
+// const new_nums= myNums.filter((num) => num > 4) // if we write scope then add return 
+                                                //statement
+// console.log(new_nums);
+
+const myNums = [1, 2, 3, 4, 5, 6];
+// const new_nums = myNums.filter((num) => num > 4);
+// console.log(new_nums); // Should log: [5, 6]
+
+
+// const new_nums = myNums.filter((num) => {
+//     return num>4  //scope block
+// })
+// console.log(new_nums); 
+
+// const nayaNum= [];
+
+// myNums.forEach((num) => {
+//     if (num>4){
+//         nayaNum.push(num);
+//     };
+// });
+
+// console.log(nayaNum);
+
+
+
+//books example
+
+
