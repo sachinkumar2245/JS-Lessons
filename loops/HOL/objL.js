@@ -37,4 +37,4 @@ let myPg= [
 myPg.forEach((item)=>{
     console.log(item.nigga);
     
-})
+})  
