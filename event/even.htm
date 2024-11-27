@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-EVENTS</title>
+    <style>
+        body{
+            background-color: rgb(43, 40, 40);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Amazing Images</h2>
+
+    <div>
+        <ul id="images">
+            
+            <li><img  width="250" height="166" id="china" src="https://www.w3schools.com/html/img_chania.jpg" alt="Chinese-Flowers"></li>
+            
+            <li><img  width="250" height="166" id="Beach" src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Beach Side" ></li>
+
+            <li><img width="250" height="166" id="italy" src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Italian Trulli"></li>
+
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // document.getElementById('italy').onclick=function(){
+    //     alert('italy-clicked')
+    // };
+
+    //jquery on does the same it was early days of js mainly in the pre development era
+    // document.getElementById('images').addEventListener('click',function(e){
+    // //    alert('italy-clicked-again'); 
+    //       console.log("inside ul");
+          
+        
+    // },false); //false is written there for event propagation
+
+    // document.getElementById('italy').addEventListener('click', function(e){
+    //     console.log(
+    //         "Owl Clicked"
+    //     );
+    //     e.stopPropagation();
+
+        
+    // },false);
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log('google-clicked');
+        
+    //     e.preventDefault(); 
+    //     e.stopPropagation(); //prevents bubbling 
+
+    // },false)
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode
+        removeIt.remove();
+        // removeIt.parentNode.removeChild(removeIt);
+
+
+        
+    })
+
+    //to study - type, timestamp, defaultPrevented, 
+    // target, to(element), srcElement, currentTarget,
+    // clientX, ClientY, screenX, screenY,
+    // altKey, ctrlKey, shiftKey, keyCode
+
+
+
+
+</script>
+</html>
