@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Chai aur Code</h2>
+    <button style=" font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; width: 50px; border: 2px solid black ; border-radius: 4px; cursor: pointer;" id="stop">
+        Stop
+    </button>
+    
+</body>
+<script>
+//    const sayHit= function(){
+//         console.log("hitler");
+        
+//     }
+
+//     setTimeout(sayHit,2000);
+
+const changeText= function(){
+    document.querySelector('h2').innerHTML="best tutor";
+}
+
+let timerId=  setTimeout(changeText,2000);
+
+// console.log('ID ',timerId);
+
+document.getElementById('stop').addEventListener('click', () => {
+    clearTimeout(timerId);
+    console.log('stopped'); //this wil irrespective of the clearTimeOut function
+});
+
+
+
+
+
+
+</script>
+</html>

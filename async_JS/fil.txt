@@ -1,0 +1,9 @@
+async js 
+
+
+********** 
+
+Blocking code           &        Non blocking code
+ block the flow of program      does not block execution
+ read file sync                 read file async
+ 
