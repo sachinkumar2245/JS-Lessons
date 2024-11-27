@@ -49,38 +49,55 @@
 
     // },70000000);
 
-    // corrected code below
+    // gpt approach
 
-    let IntervalId = null; // Define IntervalId in a higher scope
+    // let IntervalId = null; // Define IntervalId in a higher scope
 
-    // Add an event listener for the "Start" button
-    document.getElementById("start").addEventListener("click", function () {
-      // If an interval is already running, do nothing
-      if (IntervalId !== null) {
-        console.log("Interval already running.");
-        return;
-      }
+    // // Add an event listener for the "Start" button
+    // document.getElementById("start").addEventListener("click", function () {
+    //   // If an interval is already running, do nothing
+    //   if (IntervalId !== null) {
+    //     console.log("Interval already running.");
+    //     return;
+    //   }
 
-      // Start the interval
-      IntervalId = setInterval(
-        function (str) {
-          console.log(str);
-        },
-        200,
-        "hitesh sir"
-      );
-    });
+    //   // Start the interval
+    //   IntervalId = setInterval(
+    //     function (str) {
+    //       console.log(str);
+    //     },
+    //     200,
+    //     "hitesh sir"
+    //   );
+    // });
 
-    // Add an event listener for the "Stop" button
-    document.getElementById("stop").addEventListener("click", function () {
-      if (IntervalId !== null) {
-        clearInterval(IntervalId); // Stop the interval
-        IntervalId = null; // Reset the IntervalId
-        console.log("Interval stopped.");
-      } else {
-        console.log("No interval to stop.");
-      }
-    });
+    // yt comment solution
+
+    const stint = function(str){
+      console.log(str);
+      
+    }
+
+    let interVal;
+    document.querySelector('#start').addEventListener('click', ()=>{
+      interValid= setInterval(stint, 1000, 'HELLO WORLD');
+    })
+
+    document.querySelector('#stop').addEventListener('click', ()=>{
+      clearInterval(interValid);
+      console.log('clicked');
+    })
+
+    // // Add an event listener for the "Stop" button
+    // document.getElementById("stop").addEventListener("click", function () {
+    //   if (IntervalId !== null) {
+    //     clearInterval(IntervalId); // Stop the interval
+    //     IntervalId = null; // Reset the IntervalId
+    //     console.log("Interval stopped.");
+    //   } else {
+    //     console.log("No interval to stop.");
+    //   }
+    // });
 
     //     const startId= document.getElementById('start').addEventListener('click', function(){
     //        const sa=  function (str) {
