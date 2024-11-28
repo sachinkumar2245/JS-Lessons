@@ -1,0 +1,21 @@
+body{
+    background-color: #414141;
+    color: aliceblue;
+}
+
+#start {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 50px;
+  border: 2px solid black; 
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#stop {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 50px;
+  border: 2px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+}
